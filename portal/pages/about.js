@@ -1,15 +1,16 @@
 import Nav from "../components/nav";
 import { getSession } from "next-auth/client";
 
-const NextAuth = () => {
+const About = () => {
   return (
     <>
       <Nav />
+      About us
     </>
   );
 };
 
-export default NextAuth;
+export default About;
 
 export async function getServerSideProps(ctx) {
   const session = await getSession(ctx);
